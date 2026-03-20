@@ -1,58 +1,93 @@
-<h1 align="center">Hi there, I'm ntirth005 👋</h1>
-
+<h1 align="center">Hey, I'm Naumish 👋</h1>
 <p align="center">
-  <em>Passionate developer · Open-source enthusiast · Lifelong learner</em>
+  <em>AI/ML dev · LLM tinkerer · Building things that talk back 🤖🎙️</em>
 </p>
 
 ---
 
 ### 🙋 About Me
 
-- 🔭 I'm currently working on exciting personal and open-source projects
-- 🌱 I'm currently learning cloud infrastructure and system design
-- 👯 I'm looking to collaborate on open-source projects and developer tools
-- 💬 Ask me about backend development, APIs, and software architecture
-- 📫 How to reach me: open an issue or connect via the links below
-- ⚡ Fun fact: I think best with a cup of coffee ☕
+- 🧠 CS undergrad @ **IIIT Raichur** (2023–2027), deep in AI/ML land
+- 🤖 Currently building **Athena** — a voice-driven multi-agent desktop assistant (LangChain + RAG + Whisper + XTTS)
+- 🎙️ Working on **Prosodia Engine** — emotion-aware speech synthesis with dynamic prosody control
+- 🧬 Love applying ML to real-world messy data — cancer genomics, medical imaging, you name it
+- 🦀 Learning Rust (it's humbling)
+- 💬 Ask me about LLMs, RAG pipelines, speech AI, or computer vision
+- 📬 Reach me at **ntirth005@gmail.com**
+- 🤝 Open to collabs on AI/ML projects & open-source research
 
 ---
 
 ### 🛠️ Tech Stack
 
+**Languages**
+
 <p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white"/>
 </p>
+
+**ML / AI**
+
+<p>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white"/>
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
+</p>
+
+**Tools & Platforms**
+
+<p>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black"/>
+</p>
+
+---
+
+### 🚀 Featured Projects
+
+| Project | What it does | Stack |
+|---|---|---|
+| [**Athena**](https://github.com/ntirth005) | Voice-driven multi-agent desktop assistant with RAG | LangChain · Whisper · XTTS · LangGraph |
+| [**Prosodia Engine**](https://github.com/ntirth005) | Emotion-aware speech synthesis with prosody control | Python · SSML · TTS |
+| [**Cancer Gene Classifier**](https://github.com/ntirth005) | ML pipeline on ClinVar (65k+ samples) for pathogenic mutation detection | PyTorch · XGBoost · SMOTE |
+| [**BUSI Image Classifier**](https://github.com/ntirth005) | CNN to classify breast ultrasound images | PyTorch · CNN · OpenCV |
 
 ---
 
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ntirth005&show_icons=true&theme=github_dark&hide_border=true" alt="GitHub Stats" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ntirth005&layout=compact&theme=github_dark&hide_border=true" alt="Top Languages" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=ntirth005&show_icons=true&theme=github_dark&hide_border=true" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ntirth005&layout=compact&theme=github_dark&hide_border=true" height="165"/>
 </p>
-
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ntirth005&theme=github-dark-blue&hide_border=true" alt="GitHub Streak"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ntirth005&theme=github-dark-blue&hide_border=true"/>
 </p>
 
 ---
 
-### 🤝 Connect With Me
+### 🔗 Connect
 
 <p>
+  <a href="https://linkedin.com/in/ntirth005">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="mailto:ntirth005@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
   <a href="https://github.com/ntirth005">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=ntirth005&style=flat-square&color=blue" alt="Profile Views"/>
+  <img src="https://komarev.com/ghpvc/?username=ntirth005&style=flat-square&color=blue"/>
 </p>
