@@ -9,9 +9,7 @@
 
 - 🧠 CS undergrad @ **IIIT Raichur** (2023–2027), deep in AI/ML land
 - 🤖 Currently building **Athena** — a voice-driven multi-agent desktop assistant (LangChain + RAG + Whisper + XTTS)
-- 🎙️ Working on **Prosodia Engine** — emotion-aware speech synthesis with dynamic prosody control
 - 🧬 Love applying ML to real-world messy data — cancer genomics, medical imaging, you name it
-- 🦀 Learning Rust (it's humbling)
 - 💬 Ask me about LLMs, RAG pipelines, speech AI, or computer vision
 - 📬 Reach me at **ntirth005@gmail.com**
 - 🤝 Open to collabs on AI/ML projects & open-source research
@@ -26,7 +24,6 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
   <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white"/>
 </p>
 
 **ML / AI**
@@ -48,17 +45,6 @@
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
   <img src="https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black"/>
 </p>
-
----
-
-### 🚀 Featured Projects
-
-| Project | What it does | Stack |
-|---|---|---|
-| [**Athena**](https://github.com/ntirth005) | Voice-driven multi-agent desktop assistant with RAG | LangChain · Whisper · XTTS · LangGraph |
-| [**Prosodia Engine**](https://github.com/ntirth005) | Emotion-aware speech synthesis with prosody control | Python · SSML · TTS |
-| [**Cancer Gene Classifier**](https://github.com/ntirth005) | ML pipeline on ClinVar (65k+ samples) for pathogenic mutation detection | PyTorch · XGBoost · SMOTE |
-| [**BUSI Image Classifier**](https://github.com/ntirth005) | CNN to classify breast ultrasound images | PyTorch · CNN · OpenCV |
 
 ---
 
