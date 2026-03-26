@@ -20,9 +20,11 @@ import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
+import math
 
 
 README_PATH = Path("README.md")
+CHART_SVG_PATH = Path("assets/code-style-distribution.svg")
 MARKER_START = "<!-- CODE_STYLE_DISTRIBUTION_START -->"
 MARKER_END = "<!-- CODE_STYLE_DISTRIBUTION_END -->"
 
@@ -121,35 +123,32 @@ def fetch_repo_distribution(owner: str, repo: str, path: str, token: str | None)
     return manual, vibe
 
 
-def render_block(rows: list[RepoDistribution], overall_manual: float, overall_vibe: float, username: str) -> str:
-    chart_config = {
-        "type": "doughnut",
-        "data": {
-            "labels": ["Manual Code", "Vibe Code"],
-            "datasets": [
-                {
-                    "data": [round(overall_manual, 2), round(overall_vibe, 2)],
-                    "backgroundColor": ["#2ea043", "#0969da"],
-                    "borderColor": "#0d1117",
-                    "borderWidth": 3,
-                }
-            ],
-        },
-        "options": {
-            "plugins": {
-                "legend": {
-                    "position": "bottom",
-                    "labels": {"color": "#c9d1d9", "boxWidth": 14},
-                }
-            },
-            "cutout": "62%",
-        },
-    }
-    chart_url = (
-        "https://quickchart.io/chart?width=420&height=280&c="
-        + urllib.parse.quote(json.dumps(chart_config, separators=(",", ":")))
-    )
+def generate_distribution_svg(overall_manual: float, overall_vibe: float) -> str:
+    # Draw a donut chart using stroke-dasharray so GitHub can render it as a static SVG.
+    size = 300
+    cx = 150
+    cy = 150
+    radius = 92
+    stroke = 42
+    circumference = 2 * math.pi * radius
 
+    manual_len = circumference * (overall_manual / 100.0)
+    vibe_len = circumference - manual_len
+
+    return f"""<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"{size}\" height=\"{size}\" viewBox=\"0 0 {size} {size}\" role=\"img\" aria-label=\"Coding style distribution\">\
+  <rect width=\"100%\" height=\"100%\" fill=\"#0d1117\"/>\
+  <circle cx=\"{cx}\" cy=\"{cy}\" r=\"{radius}\" fill=\"none\" stroke=\"#30363d\" stroke-width=\"{stroke}\"/>\
+  <circle cx=\"{cx}\" cy=\"{cy}\" r=\"{radius}\" fill=\"none\" stroke=\"#2ea043\" stroke-width=\"{stroke}\" stroke-linecap=\"butt\"\
+      transform=\"rotate(-90 {cx} {cy})\" stroke-dasharray=\"{manual_len:.2f} {circumference:.2f}\"/>\
+  <circle cx=\"{cx}\" cy=\"{cy}\" r=\"{radius}\" fill=\"none\" stroke=\"#0969da\" stroke-width=\"{stroke}\" stroke-linecap=\"butt\"\
+      transform=\"rotate({-90 + (360.0 * overall_manual / 100.0):.3f} {cx} {cy})\" stroke-dasharray=\"{vibe_len:.2f} {circumference:.2f}\"/>\
+  <text x=\"50%\" y=\"49%\" fill=\"#c9d1d9\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\">Code Dist</text>\
+  <text x=\"50%\" y=\"58%\" fill=\"#8b949e\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"14\">Manual {overall_manual:.1f}% | Vibe {overall_vibe:.1f}%</text>\
+</svg>\
+"""
+
+
+def render_block(rows: list[RepoDistribution], overall_manual: float, overall_vibe: float, username: str) -> str:
     lines: list[str] = []
     lines.append(MARKER_START)
     lines.append('<p align="center">')
@@ -161,7 +160,7 @@ def render_block(rows: list[RepoDistribution], overall_manual: float, overall_vi
     )
     lines.append("</p>")
     lines.append("")
-    lines.append(f'<p align="center"><img src="{chart_url}" alt="Coding style distribution chart"/></p>')
+    lines.append('<p align="center"><img src="assets/code-style-distribution.svg" alt="Coding style distribution chart" width="320"/></p>')
     lines.append("")
     lines.append("| Repository | Manual Code | Vibe Code | Weight |")
     lines.append("|---|---:|---:|---:|")
@@ -227,6 +226,8 @@ def main() -> int:
     rows.sort(key=lambda x: x.weight, reverse=True)
 
     readme = README_PATH.read_text(encoding="utf-8")
+    CHART_SVG_PATH.parent.mkdir(parents=True, exist_ok=True)
+    CHART_SVG_PATH.write_text(generate_distribution_svg(overall_manual, overall_vibe), encoding="utf-8")
     block = render_block(rows, overall_manual, overall_vibe, username)
     updated = replace_block(readme, block)
 

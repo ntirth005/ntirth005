@@ -54,9 +54,15 @@
 
 <!-- CODE_STYLE_DISTRIBUTION_START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Manual_Code-70%25-2ea043?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Vibe_Code-30%25-0969da?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Manual_Code-10.0%25-2ea043?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Vibe_Code-90.0%25-0969da?style=for-the-badge"/>
 </p>
+
+<p align="center"><img src="assets/code-style-distribution.svg" alt="Coding style distribution chart" width="320"/></p>
+
+| Repository | Manual Code | Vibe Code | Weight |
+|---|---:|---:|---:|
+| [ntirth005](https://github.com/ntirth005/ntirth005) | 10.0% | 90.0% | 8.0 |
 <!-- CODE_STYLE_DISTRIBUTION_END -->
 
 <p align="center">
