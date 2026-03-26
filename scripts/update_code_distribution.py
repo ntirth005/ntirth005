@@ -122,6 +122,34 @@ def fetch_repo_distribution(owner: str, repo: str, path: str, token: str | None)
 
 
 def render_block(rows: list[RepoDistribution], overall_manual: float, overall_vibe: float, username: str) -> str:
+    chart_config = {
+        "type": "doughnut",
+        "data": {
+            "labels": ["Manual Code", "Vibe Code"],
+            "datasets": [
+                {
+                    "data": [round(overall_manual, 2), round(overall_vibe, 2)],
+                    "backgroundColor": ["#2ea043", "#0969da"],
+                    "borderColor": "#0d1117",
+                    "borderWidth": 3,
+                }
+            ],
+        },
+        "options": {
+            "plugins": {
+                "legend": {
+                    "position": "bottom",
+                    "labels": {"color": "#c9d1d9", "boxWidth": 14},
+                }
+            },
+            "cutout": "62%",
+        },
+    }
+    chart_url = (
+        "https://quickchart.io/chart?width=420&height=280&c="
+        + urllib.parse.quote(json.dumps(chart_config, separators=(",", ":")))
+    )
+
     lines: list[str] = []
     lines.append(MARKER_START)
     lines.append('<p align="center">')
@@ -133,14 +161,7 @@ def render_block(rows: list[RepoDistribution], overall_manual: float, overall_vi
     )
     lines.append("</p>")
     lines.append("")
-    lines.append("<p align=\"center\"><em>Auto-aggregated from repo metadata files</em></p>")
-    lines.append("")
-    lines.append("```mermaid")
-    lines.append("pie showData")
-    lines.append('    title Overall Coding Style Distribution')
-    lines.append(f'    "Manual Code" : {overall_manual:.2f}')
-    lines.append(f'    "Vibe Code" : {overall_vibe:.2f}')
-    lines.append("```")
+    lines.append(f'<p align="center"><img src="{chart_url}" alt="Coding style distribution chart"/></p>')
     lines.append("")
     lines.append("| Repository | Manual Code | Vibe Code | Weight |")
     lines.append("|---|---:|---:|---:|")

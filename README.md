@@ -57,10 +57,6 @@
   <img src="https://img.shields.io/badge/Manual_Code-70%25-2ea043?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Vibe_Code-30%25-0969da?style=for-the-badge"/>
 </p>
-
-<p align="center">
-  <em>Auto-aggregated from repo metadata files</em>
-</p>
 <!-- CODE_STYLE_DISTRIBUTION_END -->
 
 <p align="center">
