@@ -62,7 +62,7 @@
 
 | Repository | Manual Code | Vibe Code | Weight |
 |---|---:|---:|---:|
-| [ntirth005](https://github.com/ntirth005/ntirth005) | 10.0% | 90.0% | 8.0 |
+| [ntirth005](https://github.com/ntirth005/ntirth005) | 10.0% | 90.0% | 24.0 |
 <!-- CODE_STYLE_DISTRIBUTION_END -->
 
 <p align="center">
