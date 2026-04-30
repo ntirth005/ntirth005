@@ -54,15 +54,24 @@
 
 <!-- CODE_STYLE_DISTRIBUTION_START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Manual_Code-10.0%25-2ea043?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Vibe_Code-90.0%25-0969da?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Manual_Code-51.5%25-2ea043?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Vibe_Code-48.5%25-0969da?style=for-the-badge"/>
 </p>
 
 <p align="center"><img src="assets/code-style-distribution.svg" alt="Coding style distribution chart" width="320"/></p>
 
 | Repository | Manual Code | Vibe Code | Weight |
 |---|---:|---:|---:|
+| [visiontouch](https://github.com/ntirth005/visiontouch) | 50.0% | 50.0% | 126937.0 |
+| [Medical-Image-Segmentation-Study](https://github.com/ntirth005/Medical-Image-Segmentation-Study) | 100.0% | 0.0% | 2645.0 |
+| [expense-tracker](https://github.com/ntirth005/expense-tracker) | 80.0% | 20.0% | 1285.0 |
+| [Embryo-Stage-Classification](https://github.com/ntirth005/Embryo-Stage-Classification) | 100.0% | 0.0% | 337.0 |
+| [SecureDroneCommunication](https://github.com/ntirth005/SecureDroneCommunication) | 40.0% | 60.0% | 104.0 |
+| [cnn-lstm-Embryo-Staging](https://github.com/ntirth005/cnn-lstm-Embryo-Staging) | 100.0% | 0.0% | 94.0 |
+| [lib_mgmt](https://github.com/ntirth005/lib_mgmt) | 100.0% | 0.0% | 31.0 |
 | [ntirth005](https://github.com/ntirth005/ntirth005) | 10.0% | 90.0% | 24.0 |
+| [prosodia-engine](https://github.com/ntirth005/prosodia-engine) | 60.0% | 40.0% | 19.0 |
+| [svm](https://github.com/ntirth005/svm) | 100.0% | 0.0% | 19.0 |
 <!-- CODE_STYLE_DISTRIBUTION_END -->
 
 <p align="center">
