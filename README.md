@@ -69,7 +69,7 @@
 | [SecureDroneCommunication](https://github.com/ntirth005/SecureDroneCommunication) | 40.0% | 60.0% | 104.0 |
 | [cnn-lstm-Embryo-Staging](https://github.com/ntirth005/cnn-lstm-Embryo-Staging) | 100.0% | 0.0% | 94.0 |
 | [lib_mgmt](https://github.com/ntirth005/lib_mgmt) | 100.0% | 0.0% | 31.0 |
-| [ntirth005](https://github.com/ntirth005/ntirth005) | 10.0% | 90.0% | 25.0 |
+| [ntirth005](https://github.com/ntirth005/ntirth005) | 10.0% | 90.0% | 26.0 |
 | [prosodia-engine](https://github.com/ntirth005/prosodia-engine) | 60.0% | 40.0% | 19.0 |
 | [svm](https://github.com/ntirth005/svm) | 100.0% | 0.0% | 19.0 |
 <!-- CODE_STYLE_DISTRIBUTION_END -->
